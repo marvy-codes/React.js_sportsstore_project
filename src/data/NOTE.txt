@@ -1,0 +1,18 @@
+// HTTP requests sent by JavaScript code are performed asynchronously. This doesn’t fit well with the default
+// behavior of the Redux data store, which responds to changes only when an action is processed by a reducer.
+// Redux data stores can be extended to support asynchronous operations using a middleware function, which
+// inspects the actions that are sent to the data store and alters them before they are processed.
+
+/* PAGINATION */
+// json-server supports pagination through query strings 
+// http://localhost:3500/api/products?category_like=watersports&_page=2&_limit=3&_sort=name
+// The query string for this URL asks the web service to return a page of products from a specific category.
+// It ask the webservice to return the second page containing three products from the set that have a category value of watersports, sorted by name property,
+
+// _page === selects the page number
+// _limit === selects the page size
+// _sort === specifies the property by which the objects will be sorted before being paginated
+// category_like === filters the result to include only those category property matches the field value, if ommited, products from all category will be selected.
+
+
+// The Axios package will use the parameters to add query string to the request URL.
