@@ -8,6 +8,7 @@
 // http://localhost:3500/api/products?category_like=watersports&_page=2&_limit=3&_sort=name
 // The query string for this URL asks the web service to return a page of products from a specific category.
 // It ask the webservice to return the second page containing three products from the set that have a category value of watersports, sorted by name property,
+// There is no standard approach to providing pagination, and you should consult the documentation for the server or service you are using.
 
 // _page === selects the page number
 // _limit === selects the page size

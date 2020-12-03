@@ -18,7 +18,7 @@ module.exports = function () {
         categories: categories,
         products: data,
         orders: [],
-        marvyCodes: { name: "olowookere marvellous", university: "The Federal University of Technology, Akure."}
+        marvyCodes: { name: "olowookere Marvellous", university: "The Federal University of Technology, Akure."}
     }
 }
 /*

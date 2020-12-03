@@ -12,5 +12,5 @@ export class RestDataSource {
         method, url, params
     });
 }
-
+// The result from the GetData method is a promise that is resolved when the response is received from the web service
 // HTTP requests sent by JavaSCript are performed asynchronously

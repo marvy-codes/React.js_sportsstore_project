@@ -22,7 +22,7 @@ const mapDispatchToProps = {
     loadData, addToCart, updateCartQuantity, removeFromCart, clearCart
 }
 
-/*
+/* ***The products will already be filtered by the web service
 const filterProducts = (products = [], category) => 
     (!category || category === "All") 
         ? products 

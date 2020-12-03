@@ -24,9 +24,7 @@ export class DataGetter extends Component {
             this.props.loadData(DataTypes.PRODUCTS, rtData);
         }
     }
-}
+} // THIS COMPONENT RECEIVE DETAILS OF THE CURENT ROUTE AAND ITS PARAMETER AND ALSO ACCESS THE DATA STORE
 
 // <React.Fragment> is useful for defining components that provides services to the application but that
 // don't present content to the user.
-
-// This component's recieve details of the current route and its parameter and also access the data store.
