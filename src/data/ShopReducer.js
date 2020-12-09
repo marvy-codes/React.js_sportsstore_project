@@ -1,7 +1,7 @@
 // Actions are processed by data store reducers, which are functions that receive 
 // the current contents of the data store and an action object and use them to make changes...
 
-import { ActionTypes } from "./Types";
+import { ActionTypes, DataTypes } from "./Types";
 
 export const ShopReducer = (storeData, action) => {
     switch(action.type) {
@@ -17,6 +17,11 @@ export const ShopReducer = (storeData, action) => {
             
         case ActionTypes.DATA_SET_SORT_PROPERTY:
             return { ...storeData, sortKey: action.payload }
+        case ActionTypes.DATA_STORE:
+            if (action.payload.dataType === DataTypes.ORDERS) {
+                return{...storeData, order: action.payload.data}
+            }
+            break;
         default:
             return storeData || {};
     }

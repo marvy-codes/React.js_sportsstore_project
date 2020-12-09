@@ -5,11 +5,18 @@ import Axios from "axios";
 import { RestUrls } from "./Urls";
 
 export class RestDataSource {
+
+    constructor(err_handler) {
+        this.error_handler = err_handler || (() => {});
+    }
     GetData = (dataType, params) => 
         this.SendRequest("get", RestUrls[dataType], params); // result is a promise that is resolved when the response is recieved from the web service
 
-    SendRequest = (method, url, params) => Axios.request({
-        method, url, params
+    storeData = (dataType, data) => 
+        this.SendRequest("post", RestUrls[dataType], {}, data);
+    
+    SendRequest = (method, url, params, data) => Axios.request({
+        method, url, params, data
     });
 }
 // The result from the GetData method is a promise that is resolved when the response is received from the web service

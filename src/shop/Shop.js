@@ -31,9 +31,9 @@ export class Shop extends Component {
                         categories={ this.props.categories } />
                 </div>
                 <div className="col-9 p-2">
-                    <ProductPages />
                     <ProductList products={ this.props.products } 
                         addToCart={ this.handleAddToCart } />
+                    <ProductPages />
                 </div>
             </div>
         </div>

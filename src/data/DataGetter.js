@@ -13,7 +13,7 @@ export class DataGetter extends Component {
     getData = () => {
         const dsData = this.props.products_params || {} ;
         const rtData = {
-            _limit: this.props.pageSize || 5,
+            _limit: this.props.pageSize || 4,
             _sort: this.props.sortKey || "name",
             _page: this.props.match.params.page || 1,
             category_like: (this.props.match.params.category || "") === "all"
