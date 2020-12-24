@@ -10,7 +10,7 @@ import  * as ShopActions /*{ loadData, placeOrder }*/ from "../data/ActionCreato
 import { DataTypes } from "../data/Types";
 import { Shop } from "./Shop";
 import * as CartActions /*{ addToCart, updateCartQuantity, removeFromCart, clearCart }*/
- from "../data/CartActionCreators";
+from "../data/CartActionCreators";
 import { CartDetails } from "./CartDetails";
 import { DataGetter } from "../data/DataGetter";
 import { Checkout } from "./Checkout";
