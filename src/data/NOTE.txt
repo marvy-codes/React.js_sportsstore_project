@@ -21,3 +21,7 @@
 // GRAPHQL.......
 // In graphql changes are performed using mutations, following the theme of separating operations to read and write, which is common in react
 // The code required to implement the mutation is simpler than the queries because the queries required additional statements to filter and page data.
+
+// JWT specification https://tools.ietf.org/html/rfc7519
+
+// Adam's email address adam@adam-freeman.com
